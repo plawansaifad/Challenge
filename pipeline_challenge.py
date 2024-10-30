@@ -11,7 +11,7 @@ os.chdir(parent_path)
 
 # read config file
 config = configparser.ConfigParser()
-config.read('./pipeline.conf')
+config.read('./pipeline_challenge.conf')
 inputPath = config.get('DEFAULT', 'INPUT_PATH')
 outputPath = config.get('DEFAULT', 'OUTPUT_PATH')
 
