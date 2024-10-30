@@ -23,10 +23,10 @@ jobs:
             EOF
       - name: Deploy code to databricks workspace
         run: |
-            databricks workspace import "pipeline.py" "/Workspace/Users/kridsadp@ais.co.th/test/pipeline_challenge" --language python --overwrite
+            databricks workspace import "pipeline_challenge.py" "/Workspace/Users/kridsadp@ais.co.th/test/pipeline_challenge" --language python --overwrite
       - name: Deploy test to databricks workspace
         run: |
-            databricks workspace import "test.py" "/Workspace/Users/kridsadp@ais.co.th/test/test_challenge" --language python --overwrite
+            databricks workspace import "test_challenge.py" "/Workspace/Users/kridsadp@ais.co.th/test/test_challenge" --language python --overwrite
       - name: Run test job
         run: |
             databricks jobs run-now --job-id 771872046432487
