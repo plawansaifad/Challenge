@@ -30,4 +30,3 @@ jobs:
       - name: Run test job
         run: |
             databricks jobs run-now --job-id 771872046432487
-      
